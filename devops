@@ -1,1 +1,27 @@
- hi how ru hell ru
+ package GrtCurrentDateTime;
+
+import java.util.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.*;
+
+public class GrtCurrentDateTime 
+{
+	public static void main(String[] args) 
+        {
+
+		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		// get current date time with Date()
+		Date date = new Date("2016/06/20");
+		System.out.println(dateFormat.format(date));
+		DateFormat dateFormat1 = new SimpleDateFormat("yyyy");
+		DateFormat dateFormat2 = new SimpleDateFormat("MMMM");
+		DateFormat dateFormat3 = new SimpleDateFormat("dd");
+		System.out.println(dateFormat1.format(date));
+		System.out.println(dateFormat2.format(date));
+		System.out.println(dateFormat3.format(date));
+
+	}
+}
+
